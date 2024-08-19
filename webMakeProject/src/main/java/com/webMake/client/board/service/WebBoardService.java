@@ -1,5 +1,9 @@
 package com.webMake.client.board.service;
 
-public interface WebBoardService {
+import java.util.List;
 
+import com.webMake.client.board.vo.WebBoardVO;
+
+public interface WebBoardService {
+	public List<WebBoardVO> wbList(WebBoardVO wbvo);
 }

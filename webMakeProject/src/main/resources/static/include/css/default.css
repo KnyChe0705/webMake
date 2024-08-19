@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+textarea{resize:none;}
+.table-height{min-height:  453px;}
+.required{color: skyblue;}
+#item-template{display:none;}
+.inline{display:inline-bloc}
+.reply_count{color: white; font-size:small;}

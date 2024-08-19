@@ -1,0 +1,16 @@
+#container{
+	width:1080px;
+	margin:0 auto;
+}
+
+.goDetail{
+	cursor:pointer; /* 클릭 가능한 커서 */
+	color:#000;	/* 기본 텍스트 색상 */
+	transition:color 0.1s ease; /* 부드러운 색상 전환*/ 
+}
+
+/* hover 상태에서 스타일 변경*/
+.goDetail:hover{
+	color:blue; /* hover 시 활성화 된 색상 */
+	text-decoration: underline;
+}
