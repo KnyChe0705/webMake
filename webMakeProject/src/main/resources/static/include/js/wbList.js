@@ -5,12 +5,12 @@ $(function(){
 		
 		$("#detailForm").attr({
 			"method":"get",
-			"action":"/webboard/WebDetail"
+			"action":"/webboard/WebBoardDetail"
 		});
 		$("#detailForm").submit();
 	});
 	
 	$("#writeFormBtn").on("click", () => {
-		location.href="/webboard/WebWriteForm";
+		location.href="/webboard/WebBoardWriteForm";
 	});
 });

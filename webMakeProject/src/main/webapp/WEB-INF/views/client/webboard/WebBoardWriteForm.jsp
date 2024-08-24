@@ -3,7 +3,7 @@
 
 
 
-<link href="/resources/include/css/wbDetail.css" rel="stylesheet">
+<link href="/resources/include/css/wbWrite.css" rel="stylesheet">
 </head>
 <body>
 

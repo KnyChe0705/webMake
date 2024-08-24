@@ -18,4 +18,20 @@
 		ORDER BY wb_no desc
 	</select>
 	
+	<update id="wbReadcntUpdate" parameterType="webboard">
+		UPDATE web_board
+		SET wb_readcnt = wb_readcnt + 1
+		WHERE wb_no = #{wbNo}
+	</update>
+	
+	<select id="wbDetail" parameterType="webboard" resultMap="webboardMap">
+		SELECT wb_no, wb_name, wb_title, wb_content, to_char(wb_date, 'YYYY-MM-DD') as wb_date, wb_readcnt
+		FROM web_board
+		WHERE wb_no = #{wbNo}
+	</select>
+	
+	<insert id="wbInsert" parameterType="webboard">
+		INSERT INTO web_board(wb_no, wb_name, wb_title, wb_content)
+		VALUES(web_board_seq.nextval, #{wbNo}, #{wbTitle}, #{wbName}, #{wbContent})
+	</insert>
 </mapper>

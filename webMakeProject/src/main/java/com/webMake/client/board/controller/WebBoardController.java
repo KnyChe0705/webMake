@@ -24,11 +24,29 @@ public class WebBoardController {
 	
 	@GetMapping("/WebBoardList")
 	public String WebBoardList(@ModelAttribute WebBoardVO wbvo, Model model) {
-		log.info("WebBoardList 호출 성공");
+		//log.info("WebBoardList 호출 성공");
 		
 		List<WebBoardVO> WebBoardList = wbService.wbList(wbvo);
 		model.addAttribute("WebBoardList", WebBoardList);
 		
 		return "client/webboard/WebBoardList";
 	}
+	
+	@GetMapping("/WebBoardDetail")
+	public String WebBoardDetail(@ModelAttribute WebBoardVO wbvo, Model model) {
+		//log.info("WebBoardDetail 호출 성공");
+		//log.info("wbvo = " + wbvo);
+		
+		WebBoardVO detail = wbService.wbDetail(wbvo);
+		model.addAttribute("detail", detail);
+		
+		return "client/webboard/WebBoardDetail";
+	}
+	
+	@GetMapping("/WebBoardWriteForm")
+	public String WebBoardWriteForm() {
+	    log.info("WebBoardWriteForm 호출 성공");
+	    return "client/webboard/WebBoardWriteForm";
+	}
+
 }

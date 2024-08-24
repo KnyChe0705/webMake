@@ -22,4 +22,32 @@ public class WebBoardServiceImpl implements WebBoardService {
 		list=wbDao.wbList(wbvo);
 		return list;
 	}
+	
+	@Override
+	public int wbListCnt(WebBoardVO wbvo) {
+		return wbDao.wbListCnt(wbvo);
+	}
+	
+	@Override
+	public WebBoardVO wbDetail(WebBoardVO wbvo) {
+	    wbDao.wbReadcntUpdate(wbvo);
+
+	    WebBoardVO detail = wbDao.wbDetail(wbvo);
+	    if(detail!=null) {
+	    	detail.setWbContent(detail.getWbContent().replaceAll("\n", "<br />"));
+	    }
+	    return detail;
+	}
+	
+	@Override
+	public int wbInsert(WebBoardVO wbvo) {
+		int result = 0;
+		
+		wbvo.setWbNo(0);
+		if(wbvo.getWbNo() == 0) {
+			return result;
+		}
+		result = wbDao.wbInsert(wbvo);
+		return result;
+	}
 }
