@@ -14,7 +14,7 @@ $(function(){
 	$("#deleteBtn").on("click", () => {
 		$("#w_data").attr({
 			"method":"post",
-			"action":"/client/webboard/WebBoardDelete"
+			"action":"/webboard/WebBoardDelete"
 		});
 		$("#w_data").submit();
 	});

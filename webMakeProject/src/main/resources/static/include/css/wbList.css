@@ -14,3 +14,9 @@
 	color:blue; /* hover 시 활성화 된 색상 */
 	text-decoration: underline;
 }
+
+#writeFormBtn{
+	margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+}

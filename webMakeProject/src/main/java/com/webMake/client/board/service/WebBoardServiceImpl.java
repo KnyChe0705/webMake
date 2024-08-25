@@ -43,11 +43,13 @@ public class WebBoardServiceImpl implements WebBoardService {
 	public int wbInsert(WebBoardVO wbvo) {
 		int result = 0;
 		
-		wbvo.setWbNo(0);
-		if(wbvo.getWbNo() == 0) {
-			return result;
-		}
 		result = wbDao.wbInsert(wbvo);
+		return result;
+	}
+	
+	@Override
+	public int wbDelete(WebBoardVO wbvo) {
+		int result = wbDao.wbDelete(wbvo);
 		return result;
 	}
 }

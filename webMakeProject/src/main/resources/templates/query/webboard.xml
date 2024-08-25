@@ -32,6 +32,10 @@
 	
 	<insert id="wbInsert" parameterType="webboard">
 		INSERT INTO web_board(wb_no, wb_name, wb_title, wb_content)
-		VALUES(web_board_seq.nextval, #{wbNo}, #{wbTitle}, #{wbName}, #{wbContent})
+		VALUES(seq_web_board.nextval, #{wbName}, #{wbTitle}, #{wbContent})
 	</insert>
+	
+	<delete id="wbDelete" parameterType="webboard">
+		DELETE FROM web_board where wb_no = #{wbNo}
+	</delete>
 </mapper>

@@ -1,0 +1,63 @@
+.container {
+    width: 1080px;
+    margin: auto;
+    padding: 20px;
+}
+
+.writingWrap {
+    margin-bottom: 20px;
+}
+
+.writingHeader {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-end {
+    text-align: right;
+    margin-bottom: 20px; /* 버튼과 다른 요소 사이 간격 */
+}
+
+.TitleTextArea {
+    margin-bottom: 20px; /* 제목 입력창과 작성자 입력창 사이 간격 */
+}
+
+.name {
+    margin-bottom: 20px; /* 작성자 입력창과 내용 입력창 사이 간격 */
+}
+
+.editor {
+    margin-bottom: 20px; /* 내용 입력창과 하단 버튼 사이 간격 */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#wbTitle {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+}
+
+#wbName {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+#wbContent {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    resize: vertical; /* 텍스트 영역 크기 조절 가능 */
+}
+
+.btn {
+    margin-left: 10px; /* 버튼 간 간격 */
+    padding: 8px 16px;
+    font-size: 14px;
+}

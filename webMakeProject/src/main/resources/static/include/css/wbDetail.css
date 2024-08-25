@@ -1,5 +1,64 @@
-.container{
-	width:1080px;
-	margin:auto;
+.container {
+    width: 1080px;
+    margin: auto;
+    padding: 20px;
 }
 
+.title_area {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title_text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.nickname {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.info {
+    font-size: 14px;
+    color: #888;
+}
+
+.content.viewer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    margin-bottom: 20px; /* 높이 제한이 없으므로 내용이 길어지면 자동으로 늘어남 */
+    overflow: visible; /* 필요에 따라 'hidden', 'auto' 등을 설정 가능 */
+}
+
+.content-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    white-space: pre-wrap; /* 줄바꿈과 공백을 그대로 유지 */
+    word-wrap: break-word; /* 길이가 긴 단어도 줄바꿈 가능 */
+}
+
+
+.left_start {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.left_start .btn {
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+}

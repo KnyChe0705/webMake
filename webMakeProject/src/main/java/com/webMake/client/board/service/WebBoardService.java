@@ -9,4 +9,5 @@ public interface WebBoardService {
 	public int wbListCnt(WebBoardVO wbvo);
 	public WebBoardVO wbDetail(WebBoardVO wbvo);
 	public int wbInsert(WebBoardVO wbvo);
+	public int wbDelete(WebBoardVO wbvo);
 }

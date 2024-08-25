@@ -43,4 +43,25 @@ public class WebBoardDAOTests {
 		WebBoardVO webboard = wbDao.wbDetail(wbvo);
 		log.info(webboard.toString());
 	}*/
+	
+	
+	/*@Test
+	public void testWebBoardInsert() {
+		WebBoardVO webboard = new WebBoardVO();
+		webboard.setWbTitle("테스트 점검기간");
+		webboard.setWbName("게시판 담당자");
+		webboard.setWbContent("테스트기간이 한달 연장되었습니다.");
+		
+		int count = wbDao.wbInsert(webboard);
+		log.info("입력된 행의 수: " + count);
+	}*/
+	
+	/*
+	@Test
+	public void testWebBoardDelete() {
+		WebBoardVO wbvo = new WebBoardVO();
+		wbvo.setWbNo(22);
+		
+		log.info("삭제된 행의 수: "+wbDao.wbDelete(wbvo));
+	}*/
 }

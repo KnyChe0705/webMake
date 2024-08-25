@@ -13,5 +13,6 @@ public interface WebBoardDAO {
 	public WebBoardVO wbDetail(WebBoardVO wbvo);
 	public int wbReadcntUpdate(WebBoardVO wbvo);
 	public int wbInsert(WebBoardVO wbvo);
+	public int wbDelete(WebBoardVO wbvo);
 	public List<WebBoardVO> wbListExcel(WebBoardVO wbvo);
 }
